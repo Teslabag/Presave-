@@ -1,0 +1,13 @@
+.mainContainer{
+  position: relative;
+  overflow: hidden;
+}
+
+.comingSoon{
+  position: relative;
+  left:50%;
+  transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  height: 100%;
+  max-height: 56.25vw;
+}

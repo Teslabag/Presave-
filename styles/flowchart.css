@@ -1,0 +1,11 @@
+.flowchart{
+  width: 100%;
+}
+
+.test:hover > rect{
+  fill: #ff000010;
+}
+
+.chartbutton{
+  
+}

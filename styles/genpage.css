@@ -1,0 +1,161 @@
+body{
+  background-image: url("../assets/images/tilewhite.png"); 
+  background-repeat: repeat repeat;
+  background-size: 30%;
+  background-color: white;
+}
+
+.mainContainer{
+  display: flex;
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.contentHolder{
+  text-align: left;
+  text-justify: inter-word;
+  position: relative;
+  width: 80%;
+  font-family: "THICCCBOI", THICCCBOI, sans-serif;
+  font-size: 1.4vw;
+}
+
+.genTitle{
+  font-size: 4em;
+  margin: none;
+  padding: 2vh 0px 4vh 2vw;
+}
+
+.genTitle::after{
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0px;
+  width: calc(100% - 1vw);
+  height: 0;
+  border-left: 1vw solid transparent;
+  border-top: 0.5vw solid #3B3838;
+}
+
+.sectionTitle{
+  font-size: 2em;
+  padding: 0 0 1vw 0;
+}
+
+.sectionTitleShift{
+  position: relative;
+  top: calc(0px - 1.495vw - 4.6vh - 16px);
+}
+
+.section{
+  padding: 0px 3vw 0px 3vw;
+}
+
+.section>{
+  margin: 0 0 1vw 0;
+}
+
+.bar{
+  width:100%;
+  display: flex;
+  justify-content: center;
+  height: 0px;
+  padding: 0 0 1vw 0;
+}
+
+.bar::after{
+  display: block;
+  content: "";
+  width: 95%;
+  height: 0.1vw;
+  background-color: #3B3838;
+}
+
+.paragraph{
+  text-indent: 14pt;
+  line-height: 1.5;
+  margin: 0 0 1vw 0;
+}
+
+.paragraph > div{
+  text-indent: 0px;
+  line-height: normal;
+}
+
+.nonParagraph{
+  line-height: 1.5;
+  margin: 0 0 1vw 0;
+}
+
+.nonParagraph > div{
+  text-indent: 0px;
+  line-height: normal;
+}
+
+.figureHolder{
+  max-width: 100%;
+  max-height: 100%
+}
+
+.figureHolder > img{
+  min-width: 100%;
+  max-width: 100%;
+  padding: 0 0 1vw 0;
+}
+
+.figureHolder > div{
+  padding: 0 1vw 1vw 1vw;
+  font-size: 0.85em;
+  color: #757575;
+}
+
+.figureHolder > div > b{
+  color: black;
+}
+
+.TOCholder{
+  font-size: 1.3vw;
+  font-family: "THICCCBOI", THICCCBOI, sans-serif;
+  padding-top: calc(1.4625vw + 4.5vh);
+  width: 20%;
+  border-right-style: none;
+  background-color: none;
+}
+
+.TOC{
+  position: fixed;
+  position: -ms-fixed;
+  position: -webkit-sticky;
+  position: sticky;
+  width: 18vw;
+  top: 16vh;
+  left: 1vw;
+  overflow: visible;
+  padding: 0vh 1vw 0vh 1vw;
+}
+
+.TOCHeader{
+  margin: 0 1vw 0 1vw;
+  padding-left: 1vw;
+  font-size: 1.5em;
+  border-bottom: solid
+} 
+
+.TOCElement{
+  text-align: center;
+  font-size: 1.25em;
+  padding: 0.5vw 0 0.5vw 0;
+  margin: 0.5vw 0 0.5vw 0;
+  cursor: pointer;
+  border-style: none none none solid;
+  border-color: transparent;
+}
+
+.TOCElement:hover{
+  color: #eb3349;
+}
+
+.activeTOC{
+  border-color: #eb3349;
+}

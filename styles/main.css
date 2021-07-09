@@ -1,0 +1,195 @@
+html{
+  margin: 0px;
+  padding: 0px;
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: "THICCCBOI";
+  src: url('https://2020.igem.org/wiki/images/f/f8/T--Virginia--Fonts--THICCCBOI-Regular.ttf');
+}
+@font-face {
+  font-family: "THICCCBOI";
+  src: url('https://2020.igem.org/wiki/images/0/0a/T--Virginia--Fonts--THICCCBOI-Bold.ttf');
+  font-weight: bold;
+}
+
+noscript{
+  font-family: 'THICCCBOI', THICCCBOI;
+}
+
+body{
+  margin: 0px;
+  padding: 0px;
+  min-height: 100vh;
+  position: relative;
+}
+
+/*===== Changes selection color*/
+::-moz-selection { 
+  background-color: #487afa;
+  color:white;
+}
+
+::selection {
+  background-color: #487afa;
+  color:white;
+}
+
+/*=====Styles definition popups=====*/
+
+.dict{
+  position: relative;
+  color: #487afa;
+  display: inline;
+  border-bottom: 1px dotted #3B3838; 
+  cursor: context-menu;
+  width: fit-content;
+}
+
+.dict span{
+  display: none;
+  background-color: #3B3838;
+  color: #fff;
+  text-align: center;
+  border-radius: 0.5vw;
+  box-shadow: 0.25vw 0.25vw 0.5vw 0.25vw #0000007a;
+  padding: 0.75vw;
+  width: 20vw;
+  font-size: calc(0.75vw +  0.25vh);
+  font-family: 'THICCCBOI', THICCCBOI, Arial;
+  z-index: 100;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -10.5vw;
+  position: absolute;
+}
+
+.dict span img{
+  width: 10ex;
+  float: left;
+  padding: 2ex;
+}
+
+.dict:hover>span{
+  display: block;
+}
+
+.dict span::after{
+  content: " ";
+  position: absolute;
+  top: 100%; 
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #3B3838 transparent transparent transparent;
+}
+
+.dictInfo{
+  font-family: sans-serif;
+  content: "i";
+  text-align: center;
+  color: white;
+  background-color: #3B3838;
+  text-decoration: none;
+  position: absolute;
+  right: 0.25vw;
+  bottom: 0.25vw;
+  border-style: solid;
+  border-width: 0.25ex;
+  border-color: white;
+  width: 2ex;
+  height: 2ex;
+  border-radius: 100%;
+}
+
+.dictInfo:visited{
+  font-family: sans-serif;
+  content: "i";
+  text-align: center;
+  color: white;
+  background-color: #3B3838;
+  text-decoration: none;
+  position: absolute;
+  right: 0.25vw;
+  bottom: 0.25vw;
+  border-style: solid;
+  border-width: 0.25ex;
+  border-color: white;
+  width: 2ex;
+  height: 2ex;
+  border-radius: 100%;
+}
+
+/*=====Styles reference popups=====*/
+.ref{
+  font-size: 1em;
+  position: relative;
+  color: #487afa;
+  display: inline; 
+  cursor: context-menu;
+  width: fit-content;
+  text-indent: none;
+}
+
+.ref span{
+  display: none;
+  background-color: #f7f7f7;
+  color: #000;
+  text-align: left;
+  font-style: italic;
+  border-radius: 0.5vw;
+  box-shadow: 0.25vw 0.25vw 0.5vw 0.25vw #0000007a;
+  padding: 0.75vw;
+  width: 20vw;
+  font-size: calc(0.75vw +  0.25vh);
+  font-family: 'Montserrat', sans-serif;;
+  z-index: 100;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -10.5vw;
+  position: absolute;
+}
+
+.ref span img{
+  width: 10ex;
+  float: left;
+  padding: 2ex;
+}
+
+.ref:hover>span{
+  display: block;
+}
+
+.ref span::after{
+  content: " ";
+  position: absolute;
+  top: 100%; 
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #f7f7f7 transparent transparent transparent;
+}
+
+/*Custom Scroll Bar*/
+
+html {
+  --scrollbarBG: #3B3838;
+  --thumbBG: #716a6a;
+}
+body::-webkit-scrollbar {
+  width: 10px;
+}
+body {
+  scrollbar-width: thin;
+  scrollbar-color: #716a6a #3B3838;
+}
+body::-webkit-scrollbar-track {
+  background: #3B3838;
+}
+body::-webkit-scrollbar-thumb {
+  border-radius: 2px;
+  background-color: #716a6a;
+}
